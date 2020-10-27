@@ -1,0 +1,129 @@
+    1  clear
+    2  mkdir new
+    3  cd new
+    4  cd ..
+    5  ls 
+    6  ls -l
+    7  clear
+    8  git --version
+    9  git clone https://github.com/Prakash-Rajagopal/labs.git
+   10  cd labs/aws
+   11  ls -l setup-user.*
+   12  ls -l setup-user.sh
+   13  ./setup-user.sh
+   14  vi setup-user.sh
+   15  ./setup-user.sh
+   16  cd ..
+   17  cd 
+   18  logout
+   19  clear
+   20  exit
+   21  clear
+   22  git --version
+   23  clear
+   24  mkdir mycode
+   25  pwd
+   26  cd mycode
+   27  pwd
+   28  git init
+   29  ls 
+   30  ls -l
+   31  touch 1.c
+   32  ls -l
+   33  touch 2.c 3.java
+   34  ls -l
+   35  git status
+   36  git add 1.c
+   37  git status
+   38  git add .
+   39  git status
+   40  git commit -m "first commit"
+   41  git status
+   42  git log
+   43  git log --oneline
+   44  git tag -a v1.0 c8ab4d9 -m "tagged"
+   45  git log --oneline
+   46  git show tag
+   47  git show v1.0
+   48  touch 4.xml
+   49  git add .
+   50  git commit -m "second commit"
+   51  git log --oneline
+   52  git tag -a v2.0 51fa578 -m "tag v2"
+   53  git show 
+   54  clear
+   55  git log --oneline
+   56  git diff 51fa578 c8ab4d9
+   57  touch sample.c
+   58  git add .
+   59  git commit -m "third commit"
+   60  git log --oneline
+   61  touch 10.c
+   62  ls -l
+   63  git status
+   64  git add .
+   65  git status
+   66  git commit -m "fourth commit"
+   67  git status
+   68  clear
+   69  git log --oneline
+   70  git reset --soft 8e9e80b
+   71  git log --oneline
+   72  git status
+   73  git restore --staged 10.c
+   74  git --help
+   75  git reset --staged 10.c
+   76  clear
+   77  git restore --staged 10.c
+   78  git --help
+   79  clear
+   80  git restore --staged 10.c
+   81  git revert --staged 10.c
+   82  git g
+   83  git status
+   84  git reset HEAD 10.c
+   85  git status
+   86  clear
+   87  git log --oneline
+   88  git reset --hard 8e9e80b
+   89  git reset --hard 51fa578
+   90  git log --oneline
+   91  git status
+   92  ls -l
+   93  vi .gitignore
+   94  ls -l
+   95  ls -al
+   96  cat .gitignore
+   97  touch first.cobol
+   98  ls -l
+   99  git status
+  100  touch last.xml
+  101  git status
+  102  git add .
+  103  git status
+  104  git branch
+  105  git remote -v
+  106  git remote add origin https://github.com/Prakash-Rajagopal/batch01devops.git
+  107  git remote -v
+  108  git status
+  109  git commit -m "final commit"
+  110  git status
+  111  clear
+  112  ls -l
+  113  ls -al
+  114  git push -u origin master
+  115  git log --oneline
+  116  clear
+  117  git remote -v
+  118  git fetch
+  119  ls -l
+  120  git pull
+  121  ls -l
+  122  git clone https://github.com/lerndevops/edudca.git
+  123  ls -l
+  124  cd edudca
+  125  ls -l
+  126  cd 
+  127  cd mycode
+  128  history
+  129  history > gitcommand.txt
